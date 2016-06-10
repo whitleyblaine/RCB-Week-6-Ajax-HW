@@ -1,0 +1,40 @@
+html {
+  background-color: #000;
+}
+
+h1 {
+  text-align: center;
+  color: #e5e55a;
+  text-shadow: 1.5px 1px 1px #242424;
+}
+
+#title {
+  background-color: #fff;
+}
+
+/**/
+#rapper-form {
+  float: right;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+.rapperButton {
+  margin: 5px 10px 5px 5px;
+  background-color: #e5e55a;
+  color: #000;
+}
+
+#rapperButtons {
+  width: 50%;
+}
+
+#gifSpace {
+  margin-top: 5%;
+}
+
+#gifSpace img {
+  margin: 5px;
+}
+
