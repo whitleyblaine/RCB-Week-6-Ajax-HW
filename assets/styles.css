@@ -18,6 +18,7 @@ h1 {
   position: absolute;
   right: 100px;
   top: 100px;
+  color: #fff;
 }
 
 .rapperButton {
@@ -38,3 +39,11 @@ h1 {
   margin: 5px;
 }
 
+#gifTable {
+  color: white;
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}
