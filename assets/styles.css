@@ -1,4 +1,4 @@
-html {
+  html {
   background-color: #000;
 }
 
@@ -12,7 +12,6 @@ h1 {
   background-color: #fff;
 }
 
-/**/
 #rapper-form {
   float: right;
   position: absolute;
@@ -46,4 +45,8 @@ h1 {
 
 th {
   text-align: center;
+}
+
+.hide {
+  display: none;
 }
