@@ -19,7 +19,7 @@ $('#addRapper').on('click', function() {
   var toAdd = $('#rapper-input').val();
   rapperList.push(toAdd);
   makeButtons();
-  // Allows users to hit "enter" instead of clicking on the button and it won't move to the next page. In my code, even clicking the submit button won't work without this..
+  // Don't refresh the page!
   return false;
 });
 
@@ -51,6 +51,9 @@ $(document).on('click', '.rapperButton', function() {
   });
 
   $(document).on('click', '.rapperImage', function() {
-    alert('hi');
-  })
+      currentSrc = $(this).attr('src');
+      newSrc = $(this).attr('data-alt');
+      $(this).attr('data-alt', currentSrc);
+      $(this).attr('src', newSrc);
+  });
 });
