@@ -1,7 +1,7 @@
 // Variables
 var rapperList = ["Lil Wayne", "Kendrick Lamar", "Ghostface Killer", "Lauryn Hill", "Chance the Rapper", "Andre 3000", "Nas", "Rakim", "Eminem", "Jay Z", "Biggie Smalls", "Kanye West"]
 
-function makeButtons() {
+var makeButtons = function() {
   $('#rapperButtons').empty();
 
   for (i=0; i < rapperList.length; i++) {
@@ -39,7 +39,6 @@ $(document).on('click', '.rapperButton', function() {
       var rapperImage = $('<img class="rapperImage">');
       var gifDiv = $('<div>');
 
-
       rapperImage.attr('src', stillURL);
       rapperImage.attr('data-alt', movingURL);
       imgText.html('Rating: ' + rating);
@@ -49,11 +48,11 @@ $(document).on('click', '.rapperButton', function() {
       $('#td' + i).html(gifDiv);
     };
   });
+});
 
-  $(document).on('click', '.rapperImage', function() {
-      currentSrc = $(this).attr('src');
-      newSrc = $(this).attr('data-alt');
-      $(this).attr('data-alt', currentSrc);
-      $(this).attr('src', newSrc);
-  });
+$(document).on('click', '.rapperImage', function() {
+  currentSrc = $(this).attr('src');
+  newSrc = $(this).attr('data-alt');
+  $(this).attr('data-alt', currentSrc);
+  $(this).attr('src', newSrc);
 });
